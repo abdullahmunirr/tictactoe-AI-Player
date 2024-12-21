@@ -1,41 +1,43 @@
-# **Tic Tac Toe with AI opponent (Minimax Algorithm)**
+# **Tic Tac Toe with AI Opponent (Minimax Algorithm)**
 
 **Description**  
-This is a simple command-line Tic Tac Toe game where you can play against an AI opponent. The AI uses the Minimax algorithm to make the best possible moves. The game is played on a 3x3 grid where players alternate placing “X” and “O” on the grid. The game will declare a winner when one player aligns three of their marks horizontally, vertically, or diagonally, or declare a tie if the grid is full and no player has won.
+This is a simple command-line Tic Tac Toe game where you can play against an AI opponent. The AI uses the Minimax algorithm to make optimal moves. The game is played on a 3x3 grid where players alternate placing “X” and “O” on the grid. The game declares a winner when one player aligns three of their marks horizontally, vertically, or diagonally, or ends in a tie if the grid is full without a winner.
 
 ---
 
-## Table of Contents
+## **Table of Contents**
 
-1. [Features](#features)
-2. [How to Play](#how-to-play)
-3. [Installation](#installation)
-4. [Explanation](#explanation) 
-5. [Technologies Used](#technologies-used)   
+1. [Features](#features)  
+2. [How to Play](#how-to-play)  
+3. [Installation](#installation)  
+4. [Explanation](#explanation)  
+5. [Technologies Used](#technologies-used)  
+6. [License](#license)  
 
 ---
 
 ## **Features**
 
-- **AI Opponent:** The AI uses the Minimax algorithm to decide its moves.
-- **Tic Tac Toe Board:** A 3x3 grid where players place their marks.
-- **Game Outcome:** The game ends when either the player or AI wins, or when the game results in a tie.
-- **Clear Screen:** The screen is cleared after each move for a better user experience.
-  
+- **AI Opponent**: The AI uses the Minimax algorithm to make strategic moves.  
+- **Interactive Board**: A 3x3 grid where players place their marks.  
+- **Game Outcomes**: The game ends with either a win, loss, or tie.  
+- **Clear Display**: Clears the console after every move for a seamless experience.
+
 ---
 
 ## **How to Play**
-	1.	When the game starts, the board will be displayed with numbers from 1 to 9.
-	2.	The player plays first, and they are “X”.
-	3.	To make a move, input the number corresponding to the position you want to place your “X”.
-	4.	The AI plays as “O” and will make its move automatically after your turn.
-	5.	The game will continue until there is a winner or a tie.
- 
+
+1. The board is displayed with numbers (1-9) indicating available positions.  
+2. The player plays first as “X”.  
+3. Input the number corresponding to the position where you want to place your mark.  
+4. The AI plays as “O” and makes its move automatically after yours.  
+5. The game continues until there is a winner or the game ends in a tie.  
+
 ---
 
-## Installation
+## **Installation**
 
-Follow these steps to set up the project locally:
+Follow these steps to run the game locally:
 
 1. Clone the repository:
    ```bash
@@ -43,41 +45,43 @@ Follow these steps to set up the project locally:
    cd TicTacToe
    ```
 
-2. Build The Program:
+2. Compile the program:
    ```bash
    g++ -o tictactoe tictactoe.cpp
    ```
 
-3. Run the Program:
+3. Run the program:
    ```bash
    ./tictactoe
    ```
-   
+
 ---
 
 ## **Explanation**
-- **1. Display Board** : The displayBoard function prints the current state of the Tic Tac Toe board. It shows the grid in a readable format with a border around it.
-- **2. Win Check** : The checkWin function checks if a player has won the game. It checks all rows, columns, and diagonals for a winning condition.
-- **3. Tie Check** : The checkTie function checks if the game has ended in a tie. This happens when all spots on the board are filled, but no player has won.
-- **4. Minimax Algorithm** : The minimax function is a recursive function that evaluates the best possible move for the AI. It simulates all possible game states and assigns a score to each state based on the potential outcome:
-  - 1. A positive score for a win by the AI.
-	- 2. A negative score for a win by the player.
-	- 3. A score of 0 for a tie.
-	- 4. The algorithm always aims to maximize the AI’s chances of winning and minimize the player’s chances.
-- **5. AI Move** : The findBestMove function uses the minimax function to determine the best possible move for the AI. It evaluates all empty positions on the board and returns the one with the highest score.
-- **6. Game Flow** : The playGame function controls the main game loop. It handles the alternating turns between the player and the AI, checks for a winner or tie, and displays the board after each move.
-- **7. Clear Screen** : The clearScreen function clears the terminal screen for a cleaner user experience. It works on both Windows and Unix-based systems (Linux/MacOS).
+
+- **Display Board**: Displays the current state of the Tic Tac Toe board with a clean grid format.  
+- **Win Check**: Determines if a player has won by checking all rows, columns, and diagonals.  
+- **Tie Check**: Checks if the board is full without a winner.  
+- **Minimax Algorithm**:  
+  - A recursive function that evaluates all possible game states and assigns scores:  
+    1. Positive score for an AI win.  
+    2. Negative score for a player win.  
+    3. Zero for a tie.  
+  - The AI moves to maximize its chances of winning while minimizing the player's chances.  
+- **AI Move**: Uses the minimax function to determine and execute the best possible move.  
+- **Game Flow**: Alternates turns between the player and the AI, updates the board, and checks for the game outcome after each move.  
+- **Clear Screen**: Clears the console screen after every move for a better user experience.  
 
 ---
 
-## Technologies Used
+## **Technologies Used**
 
-- **Language** : C++
+- **Language**: C++  
 
 ---
 
-## License
+## **License**
 
-This project is licensed under the MIT License.
+This project is licensed under the MIT License.  
 
 ---
