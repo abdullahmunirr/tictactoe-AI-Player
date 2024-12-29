@@ -1,4 +1,6 @@
 #include <iostream>
+#include <climits> 
+
 using namespace std;
 
 void displayBoard(char array[])
